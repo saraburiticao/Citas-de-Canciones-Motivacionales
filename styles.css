@@ -1,0 +1,106 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Fondo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Color de texto general */
+}
+
+/* Contenedor principal que incluye la cita y el botón */
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Alineación en columna */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título de la aplicación */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilos para las citas */
+.cita {
+    font-size: 1.8em;
+    font-style: italic;
+    margin: 30px 0;
+    color: #444;
+    text-align: center;
+    transition: all 0.5s ease-in-out; /* Animación suave al cambiar */
+}
+
+/* Estilo para el botón de mostrar nueva cita */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Tamaño del botón */
+    font-size: 1.2em; /* Tamaño del texto */
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out; /* Transición en el botón */
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del mensaje de carga */
+.loading {
+    font-size: 1.2em;
+    color: #ff6347;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos para la cita guardada */
+.cita-guardada {
+    margin-top: 30px;
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Aumenta el ancho de la caja en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em; /* Reducimos el tamaño del título */
+    }
+
+    .cita {
+        font-size: 1.5em; /* Reducimos el tamaño de las citas */
+    }
+
+    button {
+        font-size: 1em; /* Reducimos el tamaño de los botones */
+    }
+
+    .loading {
+        font-size: 1em; /* Reducimos el tamaño del mensaje de carga */
+    }
+}
